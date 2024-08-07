@@ -1,0 +1,4 @@
+"ASUS ROG Maximus Z790 Hero",
+"ASUS ROG Maximus Z790 Dark Hero",
+"ASUS ROG Strix Z790-A Gaming WiFi ||",
+"ASUS ROG Strix Z790-F Gaming"
