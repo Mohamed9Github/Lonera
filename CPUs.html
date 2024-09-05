@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lonera | معالجات</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon"
-    type="image/x-icon"
-    href="Images/ROG Logo.png">
+    <link rel="icon" type="image/x-icon"href="Images/ROG Logo.png">
+
 </head>
-<body>
+<body class="showCart">
     <div class="Container" align="center">
         <div class="TopBar">
             <div class="top" align="right">
@@ -26,72 +25,18 @@
                     <img src="Images/Lonera Logo.png" alt="" height="100px" align="left">
                 </a>
                 <form align="center">
-                    <input type="search" placeholder="...ابحث" id="SearchBox">
+                    <input type="search" placeholder="...ابحث" id="SearchBox" class="search-Input"
+                    onkeyup="search()">
                 </form>
             </div>
         </div>
         <hr>
         <br>
-        <div class="Products" align="right">
-            <button id="PBTN">
-                <a>
-                    <img src="Images/Core i9 14900KS.png" align="left">
-                    <h2>Core i9 14900KS</h2>
-                    <h4> 24-Core (8P+16E) Performance-core Base Frequency: 3.2 GHz Efficient-core Base Frequency: 2.4 GHz LGA 1700 150W</h4>
-                </a>
-            </button>
-            <button id="PBTN">
-                <a>
-                    <img src="Images/Core i9 14900KF.png" align="left">
-                    <h2>Core i9 14900KF</h2>
-                    <h4> 24-Core (8P+16E) LGA 1700 125W None Integrated Graphics Processor</h4>
-                </a>
-            </button>
-            <button id="PBTN">
-                <a>
-                    <img src="Images/Core i9 14900K.png" align="left">
-                    <h2>Core i9 14900K</h2>
-                    <h4>24-Core (8P+16E) LGA 1700 125W Intel UHD Graphics 770 Desktop Processor</h4>
-                </a>
-            </button>
-            <button id="PBTN">
-                <a>
-                    <img src="Images/Core i9 14900F.png"  align="left">
-                    <h2>Core i9 14900F</h2>
-                    <h4>24-Core (8P+16E) LGA 1700 65W None Integrated Graphics Processor</h4>
-                </a>
-            </button>
-            <button id="PBTN">
-                <a>
-                    <img src="Images/Core i9 14900.png"  align="left">
-                    <h2>Core i9 14900</h2>
-                    <h4>24-Core (8P+16E) LGA 1700 65W Intel UHD Graphics 770 Processor</h4>
-                </a>
-            </button>
-            <button id="PBTN">
-                <a>
-                    <img src="Images/Core i7 14700KF.png" align="left">
-                    <h2>Core i7 14700KF</h2>
-                    <h4>20-Core (8P+12E) LGA 1700 125W None Integrated Graphics Desktop Processor</h4>
-                </a>
-            </button>
-            <button id="PBTN">
-                <a>
-                    <img src="Images/Core i7 14700K.png" align="left">
-                    <h2>Core i7 14700K</h2>
-                    <h4>20-Core (8P+12E) LGA 1700 125W Intel UHD Graphics 770 Processor</h4>
-                </a>
-            </button>
-            <button id="PBTN">
-                <a>
-                    <img src="Images/Core i7 14700.png" align="left">
-                    <h2>Core i7 14700</h2>
-                    <h4>20-Core (8P+12E) LGA 1700 65W Intel UHD Graphics 770 Processor</h4>
-                </a>
-            </button>
+        <div class="Products" align="right" id="CpuRoot">
         </div>
-        
     </div>
     <script src="index.js"></script>
+    <script src="CPUs/CPUsList.js"></script>
+    <script src="CPUs/CPUs.js"></script>
 </body>
 </html>

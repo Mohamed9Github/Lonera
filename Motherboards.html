@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Lonera | بوردات</title>
             <link rel="stylesheet" href="style.css">
+            <script src="Motherboards/Motherboards.js"></script>
+            <link rel="icon" type="image/x-icon"href="Images/ROG Logo.png">
     </head>
     <body>
         <div class="Container">
@@ -22,71 +24,20 @@
                         <img src="Images/Lonera Logo.png" alt="" height="100px" align="left">
                     </a>
                     <form align="center">
-                        <input type="search" placeholder="...ابحث" id="SearchBox">
+                        <input type="text" placeholder="...ابحث" id="SearchBox" class="search-Input"
+                        onkeyup="search()">
                     </form>
                 </div>
             </div>
             <hr>
             <br>
-            <div class="Products" align="right">
-                <button id="PBTN">
-                    <a>
-                        <img src="Images/Asus Rog Maximus Hero Z790.jpg" align="left">
-                        <h2>ASUS ROG Maximus Z790 Hero</h2>
-                        <h4>(WiFi 6E) LGA 1700(Intel 14th & 13th&12th Gen) ATX gaming motherboard(PCIe 5.0,DDR5,20+1power stages,2.5Gb LAN, Bluetooth V5.2,2x Thunderbolt 4 ports,5xM.2/NVMe SSD,Thunderbolt 4 USB Type-C,</h4>
-                    </a>
-                </button>
-                <button id="PBTN">
-                    <a>
-                        <img src="Images/Asus Rog Maximus Dark Hero Z790.png" align="left">
-                        <h2>ASUS ROG Maximus Z790 Dark Hero</h2>
-                        <h4> (WiFi 7) LGA 1700(14th,13th,12th Gen) DDR5 ATX gaming motherboard(PCIe 5.0x16 with Q release, five M.2 slots,20+1+2 power stages,2x Thunderbolt 4 ports</h4>
-                    </a>
-                </button>
-                <button id="PBTN">
-                    <a>
-                        <img src="Images/Asus Rog Strix Z790-A White.png" align="left">
-                        <h2>ASUS ROG Strix Z790-A Gaming WiFi II</h2>
-                        <h4>(WiFI 7) LGA 1700(Intel 14th,13th & 12th Gen) ATX gaming motherboard(16 + 1+2 power stages, DDR5, 5X M.2 slots,</h4>
-                    </a>
-                </button>
-                <button id="PBTN">
-                    <a>
-                        <img src="Images/ASUS ROG Strix Z790-F Gaming.jpg" align="left">
-                        <h2>ASUS ROG Strix Z790-F Gaming</h2>
-                        <h4>WiFi 6E LGA 1700(Intel 14th&13th &12th Gen) ATX gaming motherboard(16 + 1 power stages,DDR5,four M.2 slots, PCIe 5.0,WiFi 6E,USB 3.2 Gen 2x2 Type-C® with PD 3.0 up to 30W</h4>
-                    </a>
-                </button>
-                <button id="PBTN">
-                    <a>
-                        <img src="Images/ASUS ROG STRIX B650-A GAMING.jpg" align="left">
-                        <h2>ASUS ROG STRIX B650-A GAMING</h2>
-                        <h4>WIFI 6E Socket AM5 (LGA 1718) Ryzen 7000 gaming motherboard(12 + 2 power stages, DDR5, three M.2 slots, PCIe 4.0, 2.5G LAN, WiFi 6E, USB 3.2 Gen 2x2 Type-C port, and Aura Sync RGB )</h4>
-                    </a>
-                </button>
-                <button id="PBTN">
-                    <a>
-                        <img src="Images/ASUS ROG STRIX B650E-E GAMING.jpg" align="left">
-                        <h2>ASUS ROG STRIX B650E-E GAMING</h2>
-                        <h4>WiFi Socket AM5 (LGA 1718) Ryzen 7000 gaming motherboard(16 + 2 power stages, DDR5, 4x M.2 slots, PCIe® 5.0, WiFi 6E, 2.5G LAN, USB 3.2 Gen 2x2 Type-C® rear I/O port, Aura Sync RGBc)</h4>
-                    </a>
-                </button>
-                <button id="PBTN">
-                    <a>
-                        <img src="Images/ASUS ROG STRIX X670E-A GAMING.jpg" align="left">
-                        <h2>ASUS ROG STRIX X670E-A GAMING</h2>
-                        <h4> WIFI 6E Socket AM5 (LGA 1718) Ryzen 7000 gaming motherboard(16 + 2 power stages, PCIe 5.0, DDR5 support, four M.2 slots with heatsinks, USB 3.2 Gen 2x2, WiFi 6E, AI Cooling II, and Aura Sync )</h4>
-                    </a>
-                </button>
-                <button id="PBTN">
-                    <a>
-                        <img src="Images/ASUS ROG Strix Z790-E Gaming.png" align="left">
-                        <h2>ASUS ROG Strix Z790-E Gaming</h2>
-                        <h4>WiFi II LGA 1700(Intel 14th, Intel 13th & 12th Gen) DDR5 ATX gaming motherboard(PCIe 5.0 NVMe SSD slot with M.2 Combo-Sink,18+1+2 ower stages,2.5 Gb LAN</h4>
-                    </a>
-                </button>
+            <div class="Motherboards" align="right" id="MotherboardRoot">
+            </div>
+            <div id="cartItem" align="right">
             </div>
         </div>
-        <script src="Products/ProductsManager.js"></script>
+        <script src="index.js"></script>
+        <script src="Motherboards/Motherboards.js"></script>
+        <script src="Motherboards/MotherboardsList.js"></script>
     </body>
 </html>
