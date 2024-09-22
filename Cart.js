@@ -1,7 +1,22 @@
 const CartItem = document.getElementById("cartItem");
-const CartCount = Cart.length + 1;
+const CartCount =  + 1;
 
 
+
+
+const CartyMap = [];
+
+function getCookies(){
+    let cookies = document.cookie.split(";")
+
+    let res;
+
+    for(let i=1;i<cookies.length;i++){
+        res+= i+ '-' + cookies[i-1] + '<br>'
+    }
+
+    console.log(cookies,res);
+}
     if (CartCount <= 1){
         CartItem.classList.add("displaynone");
         CartItem.id = "";
@@ -17,7 +32,7 @@ const CartCount = Cart.length + 1;
 // Add The Products On the html file:
 
 
-const CartCategorey = [...new Set(Cart.map((Item)=>
+const CartCategorey = [...new Set(CartyMap.map((Item)=>
     {return Item}))]
     let QTY=0;
 document.getElementById("CProducts").innerHTML = CartCategorey.map((Item)=>{
