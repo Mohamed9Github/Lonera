@@ -68,7 +68,11 @@ a{
     background-color: rgba(0, 0, 0, 0.591);
 }
 .Checkout{
-    height: 100%;
+    height: 250px;
+    background-color: rgb(6, 0, 95);
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
 }
 .Total{
     padding: 20px;

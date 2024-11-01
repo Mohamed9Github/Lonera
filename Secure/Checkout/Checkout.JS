@@ -1,3 +1,2 @@
-const CheckoutTotal = 2981931;
-CheckoutTotal.textContent = 0 +" .SAR";
-document.getElementById("CHTL").textContent = CheckoutTotal;
+const CheckoutTotal = 0.0;
+document.getElementById("CHTL").textContent = CheckoutTotal / 100 +" .SAR";
