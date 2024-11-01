@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lonera | Ryzen 7 7800X3D</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="icon" type="image/x-icon" href="Images/ROG Logo.png">
+    <link rel="stylesheet" href="Style/font-awesome-4.7.0/css/font-awesome.css"
+</head>
+<body>
+    <div class="Container">
+        <div class="TopBar">
+            <div class="top" align="right">
+                <a href="\Cart.html" id="CRBTN">
+                    <button id="CARBTN">
+                        <img src="Images/Shoping Cart.png" alt="" width="30px">
+                    </button>
+                </a>
+                <a href="about.html" id="aBTN">
+                    <button>About Us</button>
+                </a>
+                <a href="https://mohamed9github.github.io/Lonera">
+                    <img src="Images/Lonera Logo.png" alt="" height="100px" align="left">
+                </a>
+                <form align="center">
+                    <input type="search" placeholder="...ابحث" id="SearchBox">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="Product" id="">
+            <div class="Images" align="center">
+                <div id="image" class="slides" align="left" style="width: 400; height: 400px;">
+                    <img src="Images/Ryzen 7 7800X3D/Ryzen 7 7800X3D.png" alt="image #1" id="SlideImg">
+                    <img src="Images/Ryzen 7 7800X3D/Ryzen 7 7800X3D front.png" alt="image #2" id="SlideImg">
+                    <img src="Images/Ryzen 7 7800X3D/Ryzen 7 7800X3D Left Side.png" alt="image #3" id="SlideImg">
+                    <img src="Images/Ryzen 7 7800X3D/Ryzen 7 7800X3D Back.png" alt="image #4" id="SlideImg">
+                </div>
+                <div id="Slider" align="bottom">
+                    <button class="prev" id="ImageBTN" onclick="prevSlide()">&#10094</button>
+                    <button class="next" id="ImageBTN" onclick="nextSlide()">&#10095</button>
+                </div>
+            </div>
+            <div class="ProductDescription">
+                <div id="ProductName" align="center"><h3>Ryzen 7 7800x3d</h3></div>
+                <div id="ProductDescription">
+                    <h3>Ryzen 7 7000 Series Zen 4 8-Core 4.2 GHz - Socket AM5 120W - AMD Radeon Graphics Desktop Processor</h3>
+                    <div id="ReviewsOptions">
+                        <div class="Reviews">
+                            <h2>Reviews: </h2>
+                            <div id="CustomerReviewsNum">
+                                <h3>1</h3>
+                            </div>
+                            <div id="Stars">
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star fa-2x checked"></span>
+                                <span class="fa fa-star-half-o checked fa-2x"></span>
+                            </div>
+                        </div>
+                        <div id="Options">
+                            <button>Ryzen 7 7800x3d</button>
+                            <button>Ryzen 7 7800x</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="QuickDetails">
+                <h2 id="ProductPrice" align="center">1800.84 R.S</h2>
+                <div id="AddToCartOptions" align="center">
+                    <button id="ATCBTN" onclick="addtocart(1,'Images/Ryzen 7 7800X3D/Ryzen 7 7800X3D.png','Ryzen 7 7800X3D','CPUs/Cpus%20Products/Ryzen%207%207800x3d.html','Ryzen 7 7000 Series Zen 4 8-Core 4.2 GHz - Socket AM5 120W - AMD Radeon Graphics Desktop Processor',1800.84)">Add To Cart</button>
+                    <div class="QTYBOX">
+                        <input type="number" id="QTY" min="1" max="3" value="1" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="CPUS Products.js"></script>
+    <script src=""></script>
+</body>
+</html>
