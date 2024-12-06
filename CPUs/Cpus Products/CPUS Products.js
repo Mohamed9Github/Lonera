@@ -29,7 +29,7 @@ function nextSlide(){
 }
 
 function addToCart(name, price){
-    document.cookie = `${name}=${price}; expires=Sun, 1 January 2050 12:00:00 UTC; path=/Cart.html`;
+    document.cookie = `${name}=${price}; expires=Sun, 1 January 2050 12:00:00 UTC; path=www.mohamed9github.github.io/Lonera/Cart.html`;
     location.reload();
 }
 // Add To Cart
