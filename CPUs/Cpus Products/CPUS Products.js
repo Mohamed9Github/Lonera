@@ -28,16 +28,10 @@ function nextSlide(){
     showSlide(slideIndex);
 }
 
+function addToCart(name, price){
+    document.cookie = `${name}=${price}; expires=Sun, 1 January 2050 12:00:00 UTC; path=/Cart.html`;
+    location.reload();
+}
 // Add To Cart
 
 const AddToCartQTY = document.getElementById("QTY");
-
-function addtocart(id , image, name, href, Desc, price,){
-    setCookie(name,price,"none","\/");
-    console.log("Working Perfectly!");
-};
-
-function setCookie(Name,Price,ExpireDate){
-
-    document.cookie = `${Name}=${Price};`
-}

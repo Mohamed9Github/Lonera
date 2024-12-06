@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-<html lang="ar">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lonera | عربة التسوق</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-    </head>
-    <body onload="getCookies()">
-        <div class="Container">
-            <div class="TopBar">
-                <div class="top" align="right">
-                    <a href="Cart.html" id="CRBTN">
-                        <button id="CARBTN">
-                            <img src="Images/Shoping Cart.png" alt="" width="30px">
-                        </button>
-                    </a>
-                    <a href="about.html" id="aBTN">
-                        <button>About Us</button>
-                    </a>
-                    <a href="https://mohamed9github.github.io/Lonera">
-                        <img src="Images/Lonera Logo.png" alt="" height="100px" align="left">
-                    </a>
-                    <form align="center">
-                        <input type="search" placeholder="...ابحث" id="SearchBox">
-                    </form>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lonera | عربة التسوق</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="TopBar">
+            <div class="top" align="right">
+                <a href="Cart.html" id="CRBTN">
+                    <button id="CARBTN">
+                        <img src="Images/Shoping Cart.png" alt="" width="30px">
+                    </button>
+                </a>
+                <a href="about.html" id="aBTN">
+                    <button>About Us</button>
+                </a>
+                <a href="https://mohamed9github.github.io/Lonera">
+                    <img src="Images/Lonera Logo.png" alt="" height="100px" align="left">
+                </a>
+                <form align="center">
+                    <input type="search" placeholder="...ابحث" id="SearchBox">
+                </form>
             </div>
-            <hr>
-            <br>
-            <div class="Cart" align="center">
-                <p id="count"></p>
-                <div id="products" align="left">
-
+        </div>
+        <hr>
+        <br>
+        <div class="Cart">
+            <div id="cartItem">
+                <div id="CProducts">
+                    
                 </div>
-                <div id="cartItem">
-                    <div id="CProducts">
-                        
-                    </div>
-                    <div id="Total">
-                        <h3>Total In SAR</h3>
-                        <h2 id="totalCurrency">0.00 SAR</h2>
-                    </div>
+                <div id="Total">
+                    <h3>Total In SAR</h3>
+                    <h2 id="totalCurrency">0.00 SAR</h2>
                 </div>
             </div>
         </div>
-    <script src="index.js"></script>
-    <script src="Cart.js">const cart = Cart;</script>
-    </body>
+    </div>
+</body>
+<script src="Cart.js"></script>
 </html>

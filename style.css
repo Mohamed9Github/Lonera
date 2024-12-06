@@ -140,15 +140,12 @@ a{
     display: none;
 }
 #CartProduct{
-    width: 650px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    flex-grow: 1;
-    flex-basis: 200;
     float: left;
-    align-items: center;
-    display: flex;
+    align-items: left;
 }
 #Total{
     float: right;
@@ -168,7 +165,7 @@ table img{
     height: 100%px;
 }
 #CartProductDesc{
-    width: 500px;
+    width: 90%;
     color: black;
 }
 #CartProductDesc h2{
@@ -195,9 +192,9 @@ table img{
     flex-basis: 200;
     float: left;
 }
-.cart{
-    display: flex;
-    flex-wrap: wrap;
+.Cart{
+    display: block;
+    gap: 10px;
 }
 #cartItem{
     gap: 10px;
@@ -214,7 +211,9 @@ table img{
     height: 150px;
 }
 #CProducts{
-    flex: none;
+    display: grid;
+    width: 60%px;
+    background-color: white;
 }
 #RemoveButton{
     width: 100px;
